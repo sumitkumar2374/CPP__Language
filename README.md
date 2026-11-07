@@ -1,7 +1,7 @@
 # Data Structures and Algorithms (DSA) in C++ 📚
 
 Welcome to my **DSA course repository**!  
-This repository contains **C++ solutions** for various **Data Structures and Algorithms** topics, organized for easy navigation, learning, and practice.
+This repository contains `C++ solutions` for various **Data Structures and Algorithms** topics, organized for easy navigation, learning, and practice.
 
 ---
 
