@@ -1,36 +1,3 @@
-```mermaid
-flowchart TD
-    A[NEW] -->|start()| B[RUNNABLE]
-    B -->|Lock unavailable| C[BLOCKED]
-    C -->|Lock acquired| B
-    B -->|wait() / join()| D[WAITING]
-    B -->|sleep() / timed wait| E[TIMED_WAITING]
-    D -->|Notify / completion| B
-    E -->|Time over| B
-    B -->|run() completes| F[TERMINATED]
-
-```
----
-
-```mermaid
-flowchart TD
-    A[NEW] -->|start()| B[RUNNABLE]
-
-    B -->|Lock unavailable| C[BLOCKED]
-    C -->|Lock acquired| B
-
-    B -->|wait() / join()| D[WAITING]
-    B -->|sleep() / timed wait| E[TIMED_WAITING]
-
-    D -->|Notify / completion| B
-    E -->|Time over| B
-
-    B -->|run() completes| F[TERMINATED]
-```
-
-     
-
-    
 # Data Structures and Algorithms (DSA) in C++ 📚
 
 Welcome to my **DSA course repository**!  
