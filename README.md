@@ -10,6 +10,31 @@ flowchart TD
     B -->|run() completes| F[TERMINATED]
 
 ```
+---
+
+```mermaid
+flowchart TD
+    A[NEW] -->|start()| B[RUNNABLE]
+
+    B -->|Lock unavailable| C[BLOCKED]
+    C -->|Lock acquired| B
+
+    B -->|wait() / join()| D[WAITING]
+    B -->|sleep() / timed wait| E[TIMED_WAITING]
+
+    D -->|Notify / completion| B
+    E -->|Time over| B
+
+    B -->|run() completes| F[TERMINATED]
+
+    style A fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    style B fill:#dcfce7,stroke:#16a34a,color:#14532d
+    style C fill:#fef3c7,stroke:#d97706,color:#78350f
+    style D fill:#f3e8ff,stroke:#9333ea,color:#581c87
+    style E fill:#ffedd5,stroke:#ea580c,color:#7c2d12
+    style F fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+```
+
     
 # Data Structures and Algorithms (DSA) in C++ 📚
 
